@@ -1,0 +1,17 @@
+#root {
+  font-family: 'ScoutCond', serif!important;
+  font-size: 24px;
+}
+body.pagina-principal {
+  overflow: hidden;
+  background: #E6E7E8;
+  height: 100%!important;
+}
+html, body #root{
+  height: 100%!important;
+}
+.jp-contenedor-circulito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

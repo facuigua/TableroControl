@@ -1,0 +1,183 @@
+.jp-eje a {
+  color: #2E3E5D;
+}
+.jp-eje {
+    height: 0%;
+    top: 50%;
+    position: absolute;
+    transform-origin: 50% 100%;
+    width: 100%;
+    z-index: 0;
+}
+.jp-eje.e1 {
+    transform: translate(0, -50%) rotate(0deg);
+}
+.jp-eje.e2 {
+    transform: translate(0, -50%) rotate(10deg);
+}
+.jp-eje.e3 {
+    transform: translate(0, -50%) rotate(20deg);
+}
+.jp-eje.e4 {
+    transform: translate(0, -50%) rotate(30deg);
+}
+.jp-eje.e5 {
+    transform: translate(0, -50%) rotate(45deg);
+}
+.jp-eje.e6 {
+    transform: translate(0, -50%) rotate(50deg);
+}
+.jp-eje.e7 {
+    transform: translate(0, -50%) rotate(60deg);
+}
+.jp-eje.e8 {
+    transform: translate(0, -50%) rotate(70deg);
+}
+.jp-eje.e9 {
+    transform: translate(0, -50%) rotate(80deg);
+}
+.jp-eje.e10 {
+    transform: translate(0, -50%) rotate(90deg);
+}
+.jp-eje.e11 {
+    transform: translate(0, -50%) rotate(100deg);
+}
+.jp-eje.e12 {
+    transform: translate(0, -50%) rotate(110deg);
+}
+.jp-eje.e13 {
+    transform: translate(0, -50%) rotate(120deg);
+}
+.jp-eje.e14 {
+    transform: translate(0, -50%) rotate(130deg);
+}
+.jp-eje.e15 {
+    transform: translate(0, -50%) rotate(135deg);
+}
+.jp-eje.e16 {
+    transform: translate(0, -50%) rotate(150deg);
+}
+.jp-eje.e17 {
+    transform: translate(0, -50%) rotate(160deg);
+}
+.jp-eje.e18 {
+    transform: translate(0, -50%) rotate(170deg);
+}
+
+.jp-eje.e2 h1, .jp-eje.e2 h2 {
+    transform: rotate(-10deg);
+}
+.jp-eje.e3 h1, .jp-eje.e3 h2 {
+    transform: rotate(-20deg);
+}
+.jp-eje.e4 h1, .jp-eje.e4 h2 {
+    transform: rotate(-30deg);
+}
+.jp-eje.e5 h1, .jp-eje.e5 h2 {
+    transform: rotate(-45deg);
+}
+.jp-eje.e6 h1, .jp-eje.e6 h2 {
+    transform: rotate(-50deg);
+}
+.jp-eje.e7 h1, .jp-eje.e7 h2 {
+    transform: rotate(-60deg);
+}
+.jp-eje.e8 h1, .jp-eje.e8 h2 {
+    transform: rotate(-70deg);
+}
+.jp-eje.e9 h1, .jp-eje.e9 h2 {
+    transform: rotate(-80deg);
+}
+.jp-eje.e10 h1, .jp-eje.e10 h2 {
+    transform: rotate(-90deg);
+}
+.jp-eje.e11 h1, .jp-eje.e11 h2 {
+    transform: rotate(-100deg);
+}
+.jp-eje.e12 h1, .jp-eje.e12 h2 {
+    transform: rotate(-110deg);
+}
+.jp-eje.e13 h1, .jp-eje.e13 h2 {
+    transform: rotate(-120deg);
+}
+.jp-eje.e14 h1, .jp-eje.e14 h2 {
+    transform: rotate(-130deg);
+}
+.jp-eje.e15 h1, .jp-eje.e15 h2 {
+    transform: rotate(-135deg);
+}
+.jp-eje.e16 h1, .jp-eje.e16 h2 {
+    transform: rotate(-150deg);
+}
+.jp-eje.e17 h1, .jp-eje.e17 h2 {
+    transform: rotate(-160deg);
+}
+.jp-eje.e18 h1, .jp-eje.e18 h2 {
+    transform: rotate(-170deg);
+}
+
+.jp-eje h1 {
+    right: calc(100% + 50px);
+}
+.jp-eje h2 {
+    left: calc(100% + 50px);
+}
+.jp-eje.e10 h1 {
+    right: calc(100%);
+     bottom: -10px;
+}
+.jp-eje.e10 h2 {
+    left: calc(100%);
+    bottom: -5px;
+}
+.jp-eje.e5 h1 {
+  right: calc(100% + 25px);
+    bottom: -110px;
+}
+.jp-eje.e5 h2 {
+    left: calc(100% + 35px);
+    bottom: 45px;
+}
+.jp-eje.e15 h1 {
+    bottom: 70px;
+    right: calc(100% + 40px);
+}
+.jp-eje.e15 h2 {
+    left: calc(100% + 25px);
+    bottom: -72px;
+}
+
+.jp-eje:before {
+    content: " ";
+    bottom: -25px;
+    left: -40px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border: 10px solid #5F85C3;
+    border-radius: 50%;
+}
+
+.jp-eje:after {
+    content: " ";
+    bottom: -25px;
+    right: -40px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border: 10px solid #5F85C3;
+    border-radius: 50%;
+}
+
+.jp-eje h1, .jp-eje h2 {
+  position: absolute;
+  bottom: -25px;
+  margin: 0;
+    font-size: 2.5rem;
+    z-index: 1;
+     text-transform: uppercase;
+     text-align: center;
+    line-height: 35px;
+}

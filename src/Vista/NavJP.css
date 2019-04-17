@@ -1,0 +1,32 @@
+.navjp {
+    height: 80px;
+    position: relative;
+}
+.navjp h2 {
+    margin: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    height: 80px;
+    align-content: end;
+    display: grid;
+}
+.navjp h2:before {
+    content: attr(data-titulo);
+    position: absolute;
+    font-size: 110px;
+    bottom: -14px;
+    margin: 0;
+    right: 0;
+    font-weight: 900;
+    color: #dedede;
+    z-index: -1;
+    width: 1000px;
+    text-align: right;
+}
+.boton-atras-jp {
+    color: #dedede;
+    font-size: 55px;
+    cursor: pointer;
+}

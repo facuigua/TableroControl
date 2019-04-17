@@ -1,0 +1,58 @@
+.circulo-pie .jp-circulito {
+    width: 85px;
+    height: 85px;
+    border: 3px solid #2E3E5D;
+    position: relative;
+    right: 0;
+    bottom: 0;
+}
+
+.circulo-pie .jp-eje:before {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #5F85C3;
+    left: -10px;
+    bottom: -12px;
+}
+
+.circulo-pie .jp-eje:after {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #5F85C3;
+    right: -10px;
+    bottom: 0px;
+}
+.jp-eje.before:before, .jp-eje.after:after {
+    background: #2e3e5d;
+}
+.circulo-pie .jp-circulito h1, .circulo-pie .jp-circulito h2 {
+    display: none;
+}
+
+.link-pie-circulito {
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    right: 30px;
+    bottom: 30px;
+}
+
+.circulo-pie {
+    padding: 0;
+}
+.boton-derecha-jp {
+    color: #dedede;
+    font-size: 55px;
+    cursor: pointer;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    right: 45px;
+    top: calc(50% - 27.5px);
+}
+
+.boton-derecha-jp i {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
