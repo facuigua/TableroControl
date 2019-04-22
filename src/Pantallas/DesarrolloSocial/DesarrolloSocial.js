@@ -14,6 +14,7 @@ class DesarrolloSocial extends React.Component {
         datos: [{}]
     }
     console.log(this.props.pkeje);
+    console.log('XD');
   }
 
   componentDidMount(){
