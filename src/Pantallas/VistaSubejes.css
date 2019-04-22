@@ -1,0 +1,75 @@
+.item-estadistica-jp {
+  height: 70px;
+  margin-bottom: 15px;
+}
+.item-estadistica-jp .row {
+  height: 70px;
+}
+.item-estadistica-jp h1, .item-estadistica-jp h2, .item-estadistica-jp h3, .item-estadistica-jp h4, .item-estadistica-jp h5 {
+  line-height: 70px;
+  margin-bottom: 0;
+}
+.item-circulo {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 4px solid #5F85C3;
+  border-radius: 50%;
+  position: relative;
+  top: calc(50% - 17.5px);
+  right: 45px;
+}
+.item-circulo:before {
+  content: " ";
+  width: 45px;
+  height: 1px;
+  background: #000;
+  top: 11px;
+  left: 40px;
+  position: absolute;
+}
+.item-porcentaje {
+  content: " ";
+  width: 80px;
+  height: 80px;
+  background: #dedede7d;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: -5px;
+}
+.item-dato-final {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+}
+.porcentaje-texto{
+  margin: 0;
+  line-height: 80px!important;
+  font-weight: bold;
+}
+
+.monto-recaudacion{
+  margin-left: 10px;
+}
+
+.valor-general{
+  font-size: 60px;
+}
+
+.descripcion-valor-general{
+  margin-top: 15px;
+}
+
+.titulo-subeje{
+  margin-top: -12px;
+}
+
+.subtitulo-subeje{
+  clear: left;
+  margin-top: -40px;
+}
