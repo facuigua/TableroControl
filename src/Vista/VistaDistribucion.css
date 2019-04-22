@@ -1,0 +1,36 @@
+.valor-general {
+    font-size: 80px;
+    margin-left: 5px;
+}
+.icono-general{
+    font-size: 70px;
+}
+
+.texto-general{
+    margin-left: 15px;
+}
+.texto-estadistica{
+    line-height: 10px!important; 
+}
+.progress{
+    margin: 10px;
+    width: 50%;
+    float: right;
+}
+.grafico{
+    display: flex;
+}
+.texto-detalle{
+    margin-bottom:0!important;
+}
+.contenedor-estadistica-zona{
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px;
+   
+}
+.Alineado{
+    text-align: center;
+}

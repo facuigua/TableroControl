@@ -1,5 +1,6 @@
 import React from 'react';
 import Contenedor from '../../Vista/Contenedor';
+import VistaDistribucion from '../../Vista/VistaDistribucion';
 import {
     Col
   } from 'reactstrap';
@@ -10,7 +11,7 @@ class Turismo extends React.Component {
     return (
     <>
         <Contenedor titulo={this.props.titulo} />
-        <Col xs="12">Algo</Col>
+        <VistaDistribucion/>
         
     </>
     );
