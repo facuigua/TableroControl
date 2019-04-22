@@ -2,11 +2,33 @@ import React from 'react';
 import '../Pantallas.css';
 import Contenedor from '../../Vista/Contenedor';
 import MasInfo from '../../Vista/MasInfo';
+import axios from 'axios';
 import {
   Nav, NavItem, NavLink, Card, Table, Col, Row
 } from 'reactstrap';
 
 class DesarrolloSocial extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+        datos: {}
+    }
+  }
+
+  componentDidMount(){
+    this.TomarDatos();
+  }
+
+  TomarDatos(){
+    const formData = new FormData();
+    formData.append('estadistica','1');
+    axios.post('https://netmuni.lacosta.gob.ar/sistemas/estadisticas/modulos/modulo_tablero_react.php', formData)
+    .then((function(data){
+        console.log(data);
+       
+    }).bind(this));
+  }
+
 
   render() {
     return (
