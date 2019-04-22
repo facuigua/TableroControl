@@ -21,7 +21,7 @@ class App extends Component {
           <Row className="h-100">
             <Switch>
               {router.map((data, key) =>{
-                return <Route key={key} path={data.path} exact={data.exact} render={(props) => <data.componente {...props} titulo={data.titulo} />} />
+                return <Route key={key} path={data.path} exact={data.exact} render={(props) => <data.componente {...props} titulo={data.titulo} pkeje={data.pkeje} />} />
               })}
             </Switch>
           </Row>

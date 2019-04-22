@@ -12,39 +12,48 @@ var router = [
         componente: Circulito, 
         exact: true, 
         path: '/',
-        titulo: 'Home'
+        titulo: 'Home',
+        pkeje:0
     },{
         componente: DesarrolloSocial, 
         path: '/DesarrolloSocial',
-        titulo: 'Desarrollo Social'
+        titulo: 'Desarrollo Social',
+        pkeje:2
     },{
         componente: OrdenamientoUrbano, 
         path: '/OrdenamientoUrbano',
-        titulo: 'Ordenamiento Urbano'
+        titulo: 'Ordenamiento Urbano',
+        pkeje:5
     },{
         componente: Modernizacion, 
         path: '/Modernizacion',
-        titulo: 'Modernización'
+        titulo: 'Modernización',
+        pkeje:1
     },{
         componente: Salud, 
         path: '/Salud',
-        titulo: 'Salud'
+        titulo: 'Salud',
+        pkeje:8
     },{
         componente: Economia, 
         path: '/Economia',
-        titulo: 'Economia'
+        titulo: 'Economia',
+        pkeje:3
     },{
         componente: Seguridad, 
         path: '/Seguridad',
-        titulo: 'Seguridad'
+        titulo: 'Seguridad',
+        pkeje:7
     },{
         componente: Personal, 
         path: '/Personal',
-        titulo: 'Personal'
+        titulo: 'Personal',
+        pkeje:4
     },{
         componente: Turismo, 
         path: '/Turismo',
-        titulo: 'Turismo'
+        titulo: 'Turismo',
+        pkeje:6  
     }
 ];
 

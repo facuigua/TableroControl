@@ -4,6 +4,7 @@
   border: 10px solid #2E3E5D;
   border-radius: 50%;
   position: relative;
+  z-index: 999;
   
 }
 .jp-circulito:before {

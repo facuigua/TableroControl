@@ -24,6 +24,7 @@ class Circulito extends Component {
                 <Eje 
                   key={key}
                   link={arre}
+                  pkeje={data.pkeje}
                   posicion={posiciones[numerito2]}
                   titulo1={[arrayTitulos[0].titulo, arrayTitulos[0].path, (this.props.titulo === arrayTitulos[0].titulo) ? true : false]}//titulo, link
                   titulo2={[data.titulo, data.path, (this.props.titulo === data.titulo) ? true : false]}

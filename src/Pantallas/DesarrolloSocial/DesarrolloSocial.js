@@ -11,8 +11,9 @@ class DesarrolloSocial extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-        datos: {}
+        datos: [{}]
     }
+    console.log(this.props.pkeje);
   }
 
   componentDidMount(){
@@ -21,104 +22,46 @@ class DesarrolloSocial extends React.Component {
 
   TomarDatos(){
     const formData = new FormData();
-    formData.append('estadistica','1');
-    axios.post('https://netmuni.lacosta.gob.ar/sistemas/estadisticas/modulos/modulo_tablero_react.php', formData)
+    formData.append('opcion','traer_subejes');
+    formData.append('fkeje',this.props.pkeje);
+    axios.post('https://netmuni.lacosta.gob.ar/sistemas/estadisticas/modulos/modulo_tablero_subejes.php', formData)
     .then((function(data){
-        console.log(data);
-       
+        //console.log(data.data);
+      this.setState({datos: data.data});
     }).bind(this));
   }
 
 
   render() {
+    console.log(this.state.datos);
+    const items=this.state.datos.map((item,index)=>
+      {
+      if (item.detalle) {
+        return(
+          <Col xs="12" className="item-estadistica-jp" key={index}>
+          <Row className="item-dato-final">
+            <Col xs="1">
+              <div className="item-circulo float-left"></div>
+            </Col>
+            <Col xs="4">
+              <h1 className="float-left titulo-subeje">{item.subeje}</h1>
+              <h3 className="float-left subtitulo-subeje">{item.subtitulo}</h3>
+            </Col>
+            <Col xs="3">
+              <h1 className="float-left valor-general-subeje text-info">{item.dato_global}</h1>
+            </Col>
+            <Col xs="4">
+              <h4 className="float-left descripcion-valor-general">{item.detalle}</h4>
+            </Col>                              
+          </Row>
+          </Col>); 
+      }
+    });  
+
     return (
       <>
         <Contenedor titulo={this.props.titulo} />
-          <Col xs="12" className="item-estadistica-jp">
-            <Row className="item-dato-final">
-              <Col xs="1">
-                <div className="item-circulo float-left"></div>
-              </Col>
-              <Col xs="4">
-                <h1 className="float-left titulo-subeje">ACCION SOCIAL</h1>
-                <h3 className="float-left subtitulo-subeje">subtitulo accion social</h3>
-              </Col>
-              <Col xs="3">
-                <h1 className="float-left valor-general text-info">856.454</h1>
-              </Col>
-              <Col xs="4">
-                <h4 className="float-left descripcion-valor-general">Cantidad de ayudas otorgadas</h4>
-              </Col>                              
-            </Row>
-          </Col>
-          <Col xs="12" className="item-estadistica-jp">
-            <Row className="item-dato-final">
-              <Col xs="1">
-                <div className="item-circulo float-left"></div>
-              </Col>
-              <Col xs="4">
-                <h1 className="float-left titulo-subeje">DEPORTES</h1>
-                <h3 className="float-left subtitulo-subeje">subtitulo deportes</h3>
-              </Col>
-              <Col xs="3">
-                <h1 className="float-left valor-general text-info">456</h1>
-              </Col>
-              <Col xs="4">
-                <h4 className="float-left descripcion-valor-general">Cantidad de alumnos</h4>
-              </Col>                              
-            </Row>
-          </Col>
-          <Col xs="12" className="item-estadistica-jp">
-            <Row className="item-dato-final">
-              <Col xs="1">
-                <div className="item-circulo float-left"></div>
-              </Col>
-              <Col xs="4">
-                <h1 className="float-left titulo-subeje">CULTURA</h1>
-                <h3 className="float-left subtitulo-subeje">subtitulo cultura</h3>
-              </Col>
-              <Col xs="3">
-                <h1 className="float-left valor-general text-info">754</h1>
-              </Col>
-              <Col xs="4">
-                <h4 className="float-left descripcion-valor-general">Cantidad de alumnos</h4>
-              </Col>                              
-            </Row>
-          </Col> 
-          <Col xs="12" className="item-estadistica-jp">
-            <Row className="item-dato-final">
-              <Col xs="1">
-                <div className="item-circulo float-left"></div>
-              </Col>
-              <Col xs="4">
-                <h1 className="float-left titulo-subeje">INCLUSION JUVENIL</h1>
-                <h3 className="float-left subtitulo-subeje">subtitulo inclusion</h3>
-              </Col>
-              <Col xs="3">
-                <h1 className="float-left valor-general text-info">12.454</h1>
-              </Col>
-              <Col xs="4">
-                <h4 className="float-left descripcion-valor-general">Cantidad de alumnos</h4>
-              </Col>                              
-            </Row>
-          </Col> 
-          <Col xs="12" className="item-estadistica-jp">
-            <Row className="item-dato-final">
-              <Col xs="1">
-                <div className="item-circulo float-left"></div>
-              </Col>
-              <Col xs="4">
-                <h1 className="float-left titulo-subeje">DISCAPACIDAD</h1>
-                <h3 className="float-left subtitulo-subeje">subtitulo discapacidad</h3>
-              </Col>
-              <Col xs="3">
-                <h1 className="float-left valor-general text-info">12.454</h1>
-              </Col>
-              <Col xs="4">
-                <h4 className="float-left descripcion-valor-general">Cantidad de personas asistidas</h4>
-              </Col>                              
-            </Row>
-          </Col>                                        
+        {items}                             
         <MasInfo 
           html={
             <>
