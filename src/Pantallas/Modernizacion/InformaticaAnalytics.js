@@ -1,5 +1,5 @@
 import React from 'react';
-import '../VistaCuadros.css';
+import '../../Vista/VistaCuadros.css';
 import Contenedor from '../../Vista/Contenedor';
 import MasInfo from '../../Vista/MasInfo';
 import {

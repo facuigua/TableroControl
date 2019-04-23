@@ -1,12 +1,12 @@
 import React from 'react';
-import '../VistaSubejes.css';
+import '../../Vista/VistaSubejes.css';
 import Contenedor from '../../Vista/Contenedor';
 import MasInfo from '../../Vista/MasInfo';
 import axios from 'axios';
 import {
   Nav, NavItem, NavLink, Card, Table, Col, Row
 } from 'reactstrap';
-
+import { Link } from "react-router-dom";
 class DesarrolloSocial extends React.Component {
   constructor(props){
     super(props);
@@ -44,7 +44,9 @@ class DesarrolloSocial extends React.Component {
               <div className="item-circulo float-left"></div>
             </Col>
             <Col xs="4">
+            <Link to="./Analytics">
               <h1 className="float-left titulo-subeje">{item.subeje}</h1>
+            </Link>  
               <h3 className="float-left subtitulo-subeje">{item.subtitulo}</h3>
             </Col>
             <Col xs="3">

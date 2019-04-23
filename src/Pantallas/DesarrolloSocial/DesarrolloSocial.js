@@ -1,5 +1,5 @@
 import React from 'react';
-import '../VistaSubejes.css';
+import '../../Vista/VistaSubejes.css';
 import Contenedor from '../../Vista/Contenedor';
 import MasInfo from '../../Vista/MasInfo';
 import axios from 'axios';

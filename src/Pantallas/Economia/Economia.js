@@ -1,5 +1,5 @@
 import React from 'react';
-import '../VistaRecaudacion.css';
+import '../../Vista/VistaRecaudacion.css';
 import Contenedor from '../../Vista/Contenedor';
 import {
   Nav, NavItem, NavLink, Card, Table, Col, Row
