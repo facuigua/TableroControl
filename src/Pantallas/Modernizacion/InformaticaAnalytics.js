@@ -1,5 +1,5 @@
 import React from 'react';
-//import '../VistaCuadros.css';
+import '../../Vista/VistaCuadros.css';
 import Contenedor from '../../Vista/Contenedor';
 import MasInfo from '../../Vista/MasInfo';
 import {
@@ -27,7 +27,7 @@ class Analytics extends React.Component {
               </Col>         
             </Row>
             <Row className="fila">
-              <Col xs="4" className="item-dato-final">
+              <Col xs="4" className="item-dato-final1">
                 <h2 className="centrado">RANKING DE PÁGINAS</h2>
                 <Col className="informacion-cuadro">
                   <Row>
@@ -47,7 +47,7 @@ class Analytics extends React.Component {
                   </Row>
                 </Col>
               </Col>
-              <Col xs="3" className="item-dato-final">
+              <Col xs="3" className="item-dato-final1">
                 <h2 className="centrado">ORIGEN</h2>
                 <Col className="informacion-cuadro">
                   <Row>
@@ -64,7 +64,7 @@ class Analytics extends React.Component {
                   </Row>
                 </Col>
               </Col>
-              <Col xs="3" className="item-dato-final">
+              <Col xs="3" className="item-dato-final1">
                 <h2 className="centrado">DISPOSITIVOS USADOS</h2>
                 <Col className="informacion-cuadro">
                   <Row>
