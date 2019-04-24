@@ -1,13 +1,12 @@
 import React from 'react';
-import '../../Vista/VistaCuadros.css';
+//import '../VistaCuadros.css';
 import Contenedor from '../../Vista/Contenedor';
 import MasInfo from '../../Vista/MasInfo';
 import {
   Nav, NavItem, NavLink, Card, Table, Col, Row
 } from 'reactstrap';
 
-class Modernizacion extends React.Component {
-
+class Analytics extends React.Component {
   render() {
     return (
     <>
@@ -133,4 +132,4 @@ class Modernizacion extends React.Component {
   }
 }
 
-export default Modernizacion;
+export default Analytics;

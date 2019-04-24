@@ -18,6 +18,7 @@ class DesarrolloSocial extends React.Component {
 
   componentDidMount(){
     this.TomarDatos();
+    console.log(this.props)
   }
 
   TomarDatos(){
@@ -44,9 +45,9 @@ class DesarrolloSocial extends React.Component {
               <div className="item-circulo float-left"></div>
             </Col>
             <Col xs="4">
-            <Link to="./Analytics">
+              <Link to={"./Analytics"}>
               <h1 className="float-left titulo-subeje">{item.subeje}</h1>
-            </Link>  
+              </Link>
               <h3 className="float-left subtitulo-subeje">{item.subtitulo}</h3>
             </Col>
             <Col xs="3">
