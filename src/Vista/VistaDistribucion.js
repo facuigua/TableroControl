@@ -4,8 +4,29 @@ import {
     Nav, NavItem, NavLink, Card, Table, Col, Row, Progress
   } from 'reactstrap';
 
-class VistaDistrubucion extends React.Component {
+class VistaDistribucion extends React.Component {
   render() {
+    console.log('datosVista',this.props.datosVista);
+
+    const items=this.props.datosVista.map((item,index)=>
+    {
+      var cantidad=(parseInt(item.cantidad)*100)/parseInt(item.total);
+
+      console.log('cantidad',cantidad);
+      return(
+          <>
+          <Col xs="7"><h6 class="porcentajeh6">{item.cantidad} ({cantidad.toFixed(2)}%)</h6></Col>
+          
+          <div className="grafico" key={index}>
+          
+          <Progress color="info" value={cantidad}/>
+          <p className="texto-detalle">{item.titulo}</p>
+          </div>
+          </>
+      );
+    });
+
+
     return (
       <>
         <Col xs="10" className="item-estadistica-jp offset-sm-2">
@@ -20,43 +41,35 @@ class VistaDistrubucion extends React.Component {
                     </h2>
                     
                     <h1 className="float-left valor-general">
-                    6160
+                    {this.props.datosVista[0]['total']}
                     </h1>
                     <h3 className="float-left texto-general">
-                    familias beneficiadas  
-                    por los programas
+                    {this.props.datosVista[0]['detalle_total']}
                     </h3>
                 </div>
               </Col>
             </Row>
         </Col>
-        <Col xs="12">
+        <Col xs="12" className="contenedor-footer-distribucion">
             <Row>
                 <Col xs="10" className="offset-sm-3" >
-                    <div className="grafico"><Progress color="info" value={90} /><p className="texto-detalle">Calor hogar</p></div>
-                    <div className="grafico"><Progress color="info" value={80} /><p className="texto-detalle" >Ayudas economicas</p></div>
-                    <div className="grafico"><Progress color="info" value={70} /><p className="texto-detalle">Medicacion</p></div>
-                    <div className="grafico"><Progress color="info" value={50} /><p className="texto-detalle">Combi municipal</p></div>
-                    <div className="grafico"><Progress color="info" value={30} /><p className="texto-detalle">Alimentos</p></div>
-                    <div className="grafico"><Progress color="info" value={20} /><p className="texto-detalle">Leches especiales</p></div>
-                    <div className="grafico"><Progress color="info" value={10} /><p className="texto-detalle">Eximicion de impuestos</p></div>
-                    <div className="grafico"><Progress color="info" value={5} /><p className="texto-detalle">Lentes</p></div>
+                {items}
                 </Col>
             </Row>
         </Col>
-        <Col xs="12">
+        <Col xs="12" className="" hidden>
             <Row className="offset-sm-4"> 
                 <div className="contenedor-estadistica-zona">
                     <h2> Zona Norte</h2>
-                    <h1> 60%</h1>
+                    <h1> 27%</h1>
                 </div>
                 <div className="contenedor-estadistica-zona">
                     <h2> Zona Centro</h2>
-                    <h1> 60%</h1>
+                    <h1> 38%</h1>
                 </div>
                 <div className="contenedor-estadistica-zona">
                     <h2> Zona Sur</h2>
-                    <h1> 60%</h1>
+                    <h1> 35%</h1>
                 </div>
             </Row>
         </Col>
@@ -65,4 +78,4 @@ class VistaDistrubucion extends React.Component {
   }
 }
 
-export default VistaDistrubucion;
+export default VistaDistribucion;

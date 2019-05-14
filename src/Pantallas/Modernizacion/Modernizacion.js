@@ -34,18 +34,18 @@ class DesarrolloSocial extends React.Component {
 
 
   render() {
-    console.log(this.state.datos);
+    //console.log(this.state.datos);
     const items=this.state.datos.map((item,index)=>
       {
       if (item.detalle) {
         return(
-          <Col xs="12" className="item-estadistica-jp" key={index}>
+          <Col xs="12" className={"item-estadistica-jp "+(item.nivel>1 ? "subnivel" : "")} key={index}>
           <Row className="item-dato-final">
             <Col xs="1">
               <div className="item-circulo float-left"></div>
             </Col>
             <Col xs="4">
-              <Link to={"./Analytics"}>
+              <Link to={"./"+item.link}>
               <h1 className="float-left titulo-subeje">{item.subeje}</h1>
               </Link>
               <h3 className="float-left subtitulo-subeje">{item.subtitulo}</h3>

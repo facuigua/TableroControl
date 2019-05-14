@@ -25,9 +25,11 @@ class PieCirculito extends React.Component {
   }
 
   render() {
+    const ocultar=this.props.ocultar?"d-none":"";
+
     return (
-      <>
-          <Link to={this.activoSiguiente()}><div className="boton-derecha-jp float-left"><i className="far fa-arrow-alt-circle-right"></i></div></Link>
+      <>      
+          <Link to={this.activoSiguiente()}><div className={`boton-derecha-jp float-left ${ocultar}`}><i className="far fa-arrow-alt-circle-right"></i></div></Link>
           <Link to="/" onClick={this.volverApp.bind(this)} className="link-pie-circulito"><Circulito clase="circulo-pie" titulo={this.props.titulo} /></Link>
       </>
     );

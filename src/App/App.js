@@ -28,7 +28,7 @@ class App extends Component {
             </Switch>
             <Switch>
               {router2.map((data, key) =>{
-                return <Route key={key} path={data.path} exact={data.exact} render={(props) => <data.componente {...props} titulo={data.titulo} pkeje={data.pkeje} />} />
+                return <Route key={key} path={data.path} exact={data.exact} render={(props) => <data.componente {...props} titulo={data.titulo} pkeje={data.pkeje} pksubeje={data.pksubeje}/>} />
               })}
             </Switch>
           

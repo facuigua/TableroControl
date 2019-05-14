@@ -7,7 +7,7 @@ class Contenedor extends React.Component {
     return (
       <>
         <NavJP titulo={this.props.titulo} />
-        <PieCirculito titulo={this.props.titulo} />
+        <PieCirculito titulo={this.props.titulo} ocultar={this.props.ocultar}/>
       </>
     );
   }
