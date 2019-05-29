@@ -8,54 +8,27 @@
   background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
 }
-.porcentaje-texto-distribucion-unificados{
+.porcentaje-texto-distribucion{
   margin: 0;
   line-height: 80px!important;
   font-size: 25px;
 }
 
-.monto-distribucion-unificados{
-  margin-top: 21px;
-  font-size:37px
+.monto-distribucion{
+  margin-left: 10px;
+  font-size:40px
 }
 
-.tipo-distribucion-unificados{
+.tipo-distribucion{
     margin-left: 10px;
   }
 
-
-.item-porcentaje-unificados {
-  content: " ";
-  width: 90px;
-  height: 90px;
-  background: #dedede7d;
-  border-radius: 50%;
-  text-align: center;
-  margin-top: -5px;
+.subtitulo-capacitaciones{
+  text-align: -webkit-center;
 }
 
-.item-estadistica-jp-unificados {
+.item-estadistica-jp-capacitacion {
   height: 70px;
   margin-bottom: 50px;
-}
-
-.anio{
-  font-size:45px;
-}
-
-.icono{
-  text-align: center;
-  margin-top: 17px;
-}
-
-.fa-arrow-up.unificados{
-  color: #5F85C3;
-  
-}
-.fa-arrow-down.unificados{
-  color: #6c757d;
-}
-
-.titulo-unificados{
-  margin-top:18px;
+  margin-top:10px;
 }

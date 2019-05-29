@@ -10,8 +10,8 @@ class VistaDistribucion extends React.Component {
 
     const items=this.props.datosVista.map((item,index)=>
     {
-      var cantidad=(parseInt(item.cantidad)*100)/parseInt(item.total);
-
+      var cantidad=(parseInt(item.cantidad)*100)/parseInt(item.total_2019);
+      
       console.log('cantidad',cantidad);
       return(
           <>
@@ -41,7 +41,7 @@ class VistaDistribucion extends React.Component {
                     </h2>
                     
                     <h1 className="float-left valor-general">
-                    {this.props.datosVista[0]['total']}
+                    {this.props.datosVista[0]['total_2019']}
                     </h1>
                     <h3 className="float-left texto-general">
                     {this.props.datosVista[0]['detalle_total']}

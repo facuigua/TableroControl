@@ -1,7 +1,7 @@
 import React from 'react';
 import Contenedor from '../../Vista/Contenedor';
 import axios from 'axios';
-import VistaDistribucion from '../../Vista/VistaDistribucion';
+import VistaDistribucionPorcentaje from '../../Vista/VistaDistribucionPorcentaje';
 import {
     Col
   } from 'reactstrap';
@@ -36,7 +36,7 @@ class Tramites extends React.Component {
     return (
     <>
         <Contenedor titulo={this.props.titulo} ocultar={true}/>
-        <VistaDistribucion datosVista={this.state.datos}/>
+        <VistaDistribucionPorcentaje datosVista={this.state.datos}/>
         
     </>
     );

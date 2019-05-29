@@ -44,64 +44,29 @@ class DesarrolloSocial extends React.Component {
             <Col xs="1">
               <div className="item-circulo float-left"></div>
             </Col>
-            <Col xs="4">
+            <Col xs="6">
               <Link to={"./"+item.link}>
-              <h1 className="float-left titulo-subeje">{item.subeje}</h1>
+                <h1 className="float-left titulo-subeje">{item.subeje}</h1>
               </Link>
-              <h3 className="float-left subtitulo-subeje">{item.subtitulo}</h3>
+              <h4 className="float-left oficina-subeje">{item.subtitulo}</h4>
             </Col>
-            <Col xs="3">
+            <Col xs="5">
               <h1 className="float-left valor-general-subeje text-info">{item.dato_global}</h1>
-            </Col>
-            <Col xs="4">
               <h4 className="float-left descripcion-valor-general">{item.detalle}</h4>
-            </Col>                              
+            </Col>
+                          
           </Row>
           </Col>); 
       }
+      
     });  
 
     return (
       <>
         <Contenedor titulo={this.props.titulo} />
-        {items}                             
-        <MasInfo 
-          html={
-            <>
-            <Card>
-            <div> <Table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </Table></div>
-            </Card>
-            </>
-          } 
-        />
+        <Col xs="12">
+          {items}
+        </Col>                        
 
       </>
     );

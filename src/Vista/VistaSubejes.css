@@ -1,12 +1,12 @@
 .item-estadistica-jp {
-  height: 70px;
-  margin-bottom: 15px;
+  height: 60px;
+  margin-bottom: 10px;
 }
 .item-estadistica-jp .row {
-  height: 70px;
+  height: 60px;
 }
 .item-estadistica-jp h1, .item-estadistica-jp h2, .item-estadistica-jp h3, .item-estadistica-jp h4, .item-estadistica-jp h5 {
-  line-height: 70px;
+  line-height: 60px;
   margin-bottom: 0;
 }
 .item-circulo {
@@ -17,7 +17,7 @@
   border-radius: 50%;
   position: relative;
   top: calc(50% - 17.5px);
-  right: 45px;
+  right: 15px;
 }
 .item-circulo:before {
   content: " ";
@@ -58,18 +58,32 @@
 }
 
 .valor-general-subeje{
-  font-size: 60px;
+  font-size: 40px;
+  line-height: normal!important;
+  width: 100%;
+  margin-top: auto;
 }
 
 .descripcion-valor-general{
-  margin-top: 15px;
+  margin-top: -11px;
+    line-height: normal!important;
+    width: 100%;
+    font-size: 22px;
 }
 
 .titulo-subeje{
-  margin-top: -12px;
+  line-height: normal!important;
+  font-size: 40px;
+  width: 100%;
 }
 
 .subtitulo-subeje{
   clear: left;
   margin-top: -40px;
+}
+.oficina-subeje {
+  line-height: normal!important;
+  width: 100%;
+  margin-top: -11px;
+  font-size: 22px;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import Contenedor from '../../Vista/Contenedor';
 import axios from 'axios';
-import VistaDistribucion from '../../Vista/VistaDistribucion';
+import VistaDistribucion from '../../Vista/VistaDistribucionNoProg';
 import {
     Col
   } from 'reactstrap';
@@ -26,7 +26,7 @@ class Tramites extends React.Component {
     formData.append('fksubeje',this.props.pksubeje);
     axios.post('https://netmuni.lacosta.gob.ar/sistemas/estadisticas/modulos/modulo_tablero_subejes.php', formData)
     .then((function(data){
-        //console.log('datos',data.data);
+        console.log('datos',data.data);
       this.setState({datos: data.data});
     }).bind(this));
   }

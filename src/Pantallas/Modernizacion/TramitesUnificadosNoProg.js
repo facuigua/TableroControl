@@ -26,7 +26,7 @@ class Tramites extends React.Component {
     formData.append('fksubeje',this.props.pksubeje);
     axios.post('https://netmuni.lacosta.gob.ar/sistemas/estadisticas/modulos/modulo_tablero_subejes.php', formData)
     .then((function(data){
-        //console.log('datos',data.data);
+        console.log('datos',data.data);
       this.setState({datos: data.data});
     }).bind(this));
   }
